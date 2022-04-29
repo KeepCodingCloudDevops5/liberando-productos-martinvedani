@@ -363,7 +363,7 @@ Se ha creado un helm chart en la carpeta `fast-api-webapp` para la aplicación `
         kubectl --namespace fast-api port-forward $POD_NAME 8080:$CONTAINER_PORT
     ```
 
-3. En una misma terminal para no perder las variables de entorno, ejecuta los comandos de las NOTAS anteriores:
+3. En una NUEVA terminal para no perder las variables de entorno, ejecuta los comandos de las NOTAS anteriores:
 
     ```sh
     export POD_NAME=$(kubectl get pods --namespace fast-api -l "app.kubernetes.io/name=fast-api-webapp,app.kubernetes.io/instance=my-app" -o jsonpath="{.items[0].metadata.name}") &&\
