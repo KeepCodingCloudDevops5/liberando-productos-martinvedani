@@ -135,7 +135,7 @@ cd z.Entrega/
     git push origin --tags
     ```
     
-![release and docker image build](https://user-images.githubusercontent.com/13549294/165978644-2a7c42d4-637a-42df-889f-68a76deb32d7.png)
+![release and docker image build](https://user-images.githubusercontent.com/13549294/166058289-07d7f825-a541-497d-93cd-25cc6cb0e812.png)
 
 1. Lo siguiente es inicializar la imagen construida en los pasos anteriores mapeando los puertos utilizados por el servidor de FastAPI y el cliente de prometheus:
 
@@ -264,7 +264,7 @@ Es posible ejecutar los tests manualmente de diferentes formas:
   ```
 Así mismo, se han automatizado los testeos en cada `git push` con GitHub Actions (ver `.github/workflows/test.yaml`) con el siguiente resultado exitoso:
 
-![test con GitHubActions](https://user-images.githubusercontent.com/13549294/165978702-073915e2-b212-43de-9310-ea2a43d2a240.png)
+![test con GitHubActions](https://user-images.githubusercontent.com/13549294/166058368-10c590c4-cc13-4e6b-a686-c893006b3408.png)
 
 # Monitoring-Autoscaling
 
