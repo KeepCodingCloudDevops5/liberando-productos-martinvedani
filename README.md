@@ -125,8 +125,14 @@ cd z.Entrega/
     ```sh
     git add -A &&\
     git commit -m "publish version v0.0.2" &&\
+    git push origin main
+    ```
+
+    And then run:
+
+    ```sh
     git tag -a v0.0.2 -m "publish version v0.0.2" &&\
-    git push origin main v0.0.2
+    git push origin --tags
     ```
     
 ![release and docker image build](https://user-images.githubusercontent.com/13549294/165978644-2a7c42d4-637a-42df-889f-68a76deb32d7.png)
